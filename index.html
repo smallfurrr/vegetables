@@ -5,24 +5,110 @@
         <title>Wild & Wacky Vegetables</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="style.css">
 
     </head>
 
     <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <h2>Some Favorites</h2>
+                    <div class="nav flex-column nav-pills" id="veggie-nav" role="tablist" aria-orientation="vertical">
+                          <a class="nav-link active" id="celery-nav" data-toggle="pill" href="#celery-root" role="tab" aria-controls="v-pills-home" aria-selected="true">Celery</a>
+                          <a class="nav-link" id="spaghetti-nav" data-toggle="pill" href="#spaghetti-squash" role="tab" aria-controls="v-pills-profile" aria-selected="false">Spaghetti Squash</a>
+                          <a class="nav-link" id="mushroom-nav" data-toggle="pill" href="#killer-mushrooms" role="tab" aria-controls="v-pills-messages" aria-selected="false">Killer Mushrooms</a>
+                    </div>
 
-        <h1>Some Favorites</h1>
-        <ul>
-            <li><a href="#">Celery Root</a>
-            <li><a href="#">Spaghetti Squash</a>
-            <li><a href="#">Killer Mushrooms</a>
-        </ul>
+                    <form>
+                          <div class="form-group">
+                            <label for="formGroupExampleInput"></label>
+                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Vegetable Lasagne">
+                            <button type="button" class="btn btn-primary">Search Recipes</button>
+                          </div>
+                    </form>
+                    <!-- closing fancy nav -->
+                </div>
+                <!-- closing left nav col -->
+                <div class="col-8">
+                    <div class="alert alert-danger" role="alert">
+                      HAVE YOU EATEN YOUR VEGGIES TODAY BITCH?!
+                    </div>
+                    <h1>Wild & Wacky Vegetables</h1>
+                        <blockquote class="blockquote">
+                              <p class="mb-2" font-size="12px">The beet is the most intense of vegetables. The radish, admittedly, is more feverish, but the fire of the radish is a cold fire, the fire of discontent not of passion. Tomatoes are lusty enough, yet there runs through tomatoes an undercurrent of frivolity. Beets are deadly serious.</p>
+                              <footer class="blockquote-footer">Tom Robbins<!-- <cite title="Source Title">Source Title</cite> --></footer>
+                        </blockquote>
+                    <h2>Some Diseases</h2>
+                        <table class="table table-bordered">
+                              <thead>
+                                <tr class="table-info">
+                                  <th scope="col">Veggie</th>
+                                  <th scope="col">Disease</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <!-- <th scope="row">1</th> -->
+                                  <td>Beets</td>
+                                  <td>Beeturia</td>
+                                </tr>
+                                <tr>
+                                  <!-- <th scope="row">2</th> -->
+                                  <td>Carrots</td>
+                                  <td>Carotenosis</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="card bg-dark text-white">
+                              <img class="card-img" src="images/veggies.jpg" alt="all-da-veg">
+                              <div class="card-img-overlay">
+                                <h3 class="card-title">Veggie Gallery</h3>
+                                <p class="card-text">VEGGIE PICS! GET YOUR VEGGIE PICS HERE! All your fave veggies on display!</p>
+                              </div>
+                        </div>
 
-        <h1>Wild & Wacky Vegetables</h1>
-        <p>Kale courgette salsify mustard broccoli seakale wakame potato fava bean tigernut leek celery spinach avocado cabbage celtuce rutabaga kohlrabi. Parsnip pea soko groundnut bitterleaf spring onion. Grape dulse rutabaga lentil gram kakadu plum water spinach cabbage lotus root.
-        </p>
-        <p>
-            Mung bean quandong kale prairie turnip celery gram zucchini pumpkin green bean silver beet chard endive komatsuna eggplant kakadu plum radish broccoli. Arugula amaranth fennel wakame peanut garlic chickweed. Sorrel jícama quandong kale chickpea water chestnut rock melon aubergine lettuce pea azuki bean cress onion sea lettuce dandelion nori dulse rutabaga. Coriander napa cabbage bok choy carrot kakadu plum brussels sprout bamboo shoot salad okra cucumber garlic kombu beet greens cauliflower summer purslane. Artichoke daikon horseradish arugula taro catsear kombu rock melon pea sprouts collard greens mustard courgette lettuce soko maize plantain.
-        </p>
-
+                        <div class="card-group">
+                              <div class="card">
+                                <img class="card-img-top" src="images/beets.jpeg" alt="beets">
+                                <div class="card-body">
+                                  <h5 class="card-title">Beets</h5>
+                                  <p class="card-text">Careful not to get your hands dirty.</p>
+                                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <img class="card-img-top" src="images/carrots.jpg" alt="carrots">
+                                <div class="card-body">
+                                  <h5 class="card-title">Carrots</h5>
+                                  <p class="card-text">Not sticks, can motivate.</p>
+                                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <img class="card-img-top" src="images/asparagus.jpg" alt="asparagus">
+                                <div class="card-body">
+                                  <h5 class="card-title">Asparagus</h5>
+                                  <p class="card-text">Spears, spears, spears.</p>
+                                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <!-- closing image cards -->
+                        <h2>More crazy information!</h2>
+                        <p>
+                        Mung bean quandong kale prairie turnip celery gram zucchini pumpkin green bean silver beet chard endive komatsuna eggplant kakadu plum radish broccoli. Arugula amaranth fennel wakame peanut garlic chickweed. Sorrel jícama quandong kale chickpea water chestnut rock melon aubergine lettuce pea azuki bean cress onion sea lettuce dandelion nori dulse rutabaga. Coriander napa cabbage bok choy carrot kakadu plum brussels sprout bamboo shoot salad okra cucumber garlic kombu beet greens cauliflower summer purslane. Artichoke daikon horseradish arugula taro catsear kombu rock melon pea sprouts collard greens mustard courgette lettuce soko maize plantain.
+                         </p>
+                </div>
+                <!-- closing right content col -->
+            </div>
+            <!-- closing main row -->
+        </div>
+        <!-- closing main container -->
     </body>
 </html>
+
+                   <!--  <p>
+                        Mung bean quandong kale prairie turnip celery gram zucchini pumpkin green bean silver beet chard endive komatsuna eggplant kakadu plum radish broccoli. Arugula amaranth fennel wakame peanut garlic chickweed. Sorrel jícama quandong kale chickpea water chestnut rock melon aubergine lettuce pea azuki bean cress onion sea lettuce dandelion nori dulse rutabaga. Coriander napa cabbage bok choy carrot kakadu plum brussels sprout bamboo shoot salad okra cucumber garlic kombu beet greens cauliflower summer purslane. Artichoke daikon horseradish arugula taro catsear kombu rock melon pea sprouts collard greens mustard courgette lettuce soko maize plantain.
+                    </p> -->
